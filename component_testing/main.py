@@ -1,6 +1,5 @@
 #import pygame
 #import pygame.camera
-#from colorthief import ColorThief
 
 from PIL import Image
 
