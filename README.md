@@ -9,7 +9,7 @@ TODO: Gör en lista med allt vi ska göra...???
 
 ## Dependencies
 
-pygame
-PIL
-gpiozero
+*pygame
+*PIL
+*gpiozero
 
