@@ -6,3 +6,10 @@ Alla ändringar kommer bli pushade till Github. Vi använder sedan SSH för att 
 ## Checklista
 
 TODO: Gör en lista med allt vi ska göra...???
+
+## Dependencies
+
+pygame
+PIL
+gpiozero
+
