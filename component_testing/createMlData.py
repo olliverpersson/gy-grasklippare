@@ -9,7 +9,7 @@ print( "Visar bilden klipp, natt eller vänd? (c/n/t)" )
 txt = input()
 
 while txt != "c" and txt != "n" and txt != "t":
-    
+
     print("type 'c' or 'n' or 't'")
     txt = input()
 
