@@ -1,3 +1,3 @@
-from components.say import sayhello
+from components.checkImage import checkImage
 
-sayhello();
+
