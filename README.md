@@ -37,3 +37,13 @@ GPIO 13	MHOO	33	34
 GPIO 19	MH+		35	36	GPIO 16 MVOO
 GPIO 26	MH-		37	38	GPIO 20 MV+
 GND - Relä 		39	40	GPIO 21 MV-
+
+## Vid ny installation
+
+mkdir gy-grasklippare
+
+git clone https://github.com/olliverpersson/gy-grasklippare.git
+
+pip install -r requirements.txt
+
+THAT'S IT!!
