@@ -4,9 +4,26 @@ import time
 
 def turn(direction):
   
+  print("reversing...")
+  
   MVOO.off()
   MHOO.off()
   MKOO.off()
+  
+  MVPLUS.on()
+  MVMINUS.on()
+  MHPLUS.on()
+  MHMINUS.on()
+  
+  MHOO.on()
+  MVOO.on()
+  
+  time.sleep(2)
+  
+  MHOO.off()
+  MVOO.off()
+  
+  time.sleep(0.5)
   
   if direction == 'left':
     
