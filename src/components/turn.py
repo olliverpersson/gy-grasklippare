@@ -29,4 +29,6 @@ def turn(direction):
     
   time.sleep(2)
   
+  MKOO.on()
+  
   goForward()
