@@ -4,6 +4,8 @@ from components.gpios import MVOO, MVPLUS, MVMINUS, MHOO, MHPLUS, MHMINUS, MKOO
 
 def goForward():
   
+  print("going forward")
+  
   MVOO.off()
   MHOO.off()
 
