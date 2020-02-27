@@ -10,6 +10,7 @@ def turn(direction):
   
   if direction == 'left':
     
+    print("turning left")
     MVPLUS.on()
     MVMINUS.on()
     MHPLUS.off()
@@ -17,6 +18,7 @@ def turn(direction):
   
   else:
     
+    print("turning right")
     MVPLUS.off()
     MVMINUS.off()
     MHPLUS.on()
