@@ -1,28 +1,42 @@
-from gpiozero import LED, BUTTON
+from gpiozero import LED, Button
+import time
 
 # Every GPIO connection is initiated here
 
 MVOO = LED(16)
-MVOO.on()
 
 MVPLUS = LED(20)
-MVPLUS.off()
 
 MVMINUS = LED(21)
-MVMINUS.off()
 
 MHOO = LED(13)
-MHOO.on()
 
 MHPLUS = LED(19)
-MHPLUS.off()
 
 MHMINUS = LED(26)
-MHMINUS.off()
 
 MKOO = LED(6)
-MKOO.on()
 
-SV = BUTTON(4) #SVS
+SV = Button(4) #SVS
 
-SH = BUTTON(23) #SHS
+SH = Button(23) #SHS
+
+def init():
+	print("turning everything to it's initial state")
+
+	MHOO.on()
+	MVOO.on()
+
+	time.sleep(0.5)
+
+	MVPLUS.off()
+	MVMINUS.off()
+
+	MHPLUS.off()
+	MHMINUS.off()
+
+	time.sleep(0.5)
+
+	MKOO.off()
+	MVOO.off()
+	MHOO.off()

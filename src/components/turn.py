@@ -6,48 +6,63 @@ def turn(direction):
   
   print("reversing...")
   
-  MVOO.off()
-  MHOO.off()
-  MKOO.off()
+#to reversing
+
+  MVOO.on()
+  MHOO.on()
+  MKOO.on()
   
+  time.sleep(0.5)
+
   MVPLUS.on()
   MVMINUS.on()
   MHPLUS.on()
   MHMINUS.on()
   
-  MHOO.on()
-  MVOO.on()
-  
-  time.sleep(2)
-  
+  time.sleep(0.5)
+
+#reversing
+
   MHOO.off()
   MVOO.off()
   
-  time.sleep(0.5)
+  time.sleep(5)
   
+  MHOO.on()
+  MVOO.on()
+  
+  time.sleep(0.5)
+
+#to turning
+
   if direction == 'left':
     
     print("turning left")
-    MVPLUS.on()
-    MVMINUS.on()
-    MHPLUS.off()
-    MHMINUS.off()
-  
-  else:
-    
-    print("turning right")
     MVPLUS.off()
     MVMINUS.off()
     MHPLUS.on()
     MHMINUS.on()
+  
+  else:
+    
+    print("turning right")
+    MVPLUS.on()
+    MVMINUS.on()
+    MHPLUS.off()
+    MHMINUS.off()
    
   time.sleep(0.5)
+
+#turning
+
+  MHOO.off()
+  MVOO.off()
     
-  MHOO.on()
-  MVOO.on()
-    
-  time.sleep(2)
+  time.sleep(5)
   
-  MKOO.on()
-  
+  MKOO.off()
+
+#to forward  
+
   goForward()
+
