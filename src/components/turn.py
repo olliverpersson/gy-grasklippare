@@ -14,10 +14,10 @@ def turn(direction):
   
   time.sleep(0.5)
 
-  MVPLUS.on()
-  MVMINUS.on()
-  MHPLUS.on()
-  MHMINUS.on()
+  MVPLUS.off()
+  MVMINUS.off()
+  MHPLUS.off()
+  MHMINUS.off()
   
   time.sleep(0.5)
 
@@ -38,18 +38,18 @@ def turn(direction):
   if direction == 'left':
     
     print("turning left")
-    MVPLUS.off()
-    MVMINUS.off()
-    MHPLUS.on()
-    MHMINUS.on()
-  
-  else:
-    
-    print("turning right")
     MVPLUS.on()
     MVMINUS.on()
     MHPLUS.off()
     MHMINUS.off()
+  
+  else:
+    
+    print("turning right")
+    MVPLUS.off()
+    MVMINUS.off()
+    MHPLUS.on()
+    MHMINUS.on()
    
   time.sleep(0.5)
 
