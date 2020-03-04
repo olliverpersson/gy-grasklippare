@@ -29,11 +29,11 @@ def init():
 
 	time.sleep(0.5)
 
-	MVPLUS.off()
-	MVMINUS.off()
+	MVPLUS.on()
+	MVMINUS.on()
 
-	MHPLUS.off()
-	MHMINUS.off()
+	MHPLUS.on()
+	MHMINUS.on()
 
 	time.sleep(0.5)
 
