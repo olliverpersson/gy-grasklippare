@@ -12,10 +12,10 @@ def goForward():
 
   time.sleep(0.5)
 
-  MVPLUS.off()
-  MVMINUS.off()
-  MHPLUS.off()
-  MHMINUS.off()
+  MVPLUS.on()
+  MVMINUS.on()
+  MHPLUS.on()
+  MHMINUS.on()
 
   time.sleep(0.5)
 
