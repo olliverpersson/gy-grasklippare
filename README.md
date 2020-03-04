@@ -3,6 +3,9 @@
 ## Utveckling
 Alla ändringar kommer bli pushade till Github. Vi använder sedan SSH för att ansluta till raspberry pi:en och synca ner den nya versionen. 
 
+Docs till gpioZero:
+https://gpiozero.readthedocs.io/en/stable/api_input.html
+
 ## Checklista
 
 TODO: Gör en lista med allt vi ska göra...???
@@ -42,8 +45,12 @@ GND - Relä 		39	40	GPIO 21 MV-
 
 mkdir gy-grasklippare
 
+cd gy-grasklippare
+
 git clone https://github.com/olliverpersson/gy-grasklippare.git
 
-pip install -r requirements.txt
+python3 -m venv venv
+
+pip3 install -r requirements.txt
 
 THAT'S IT!!

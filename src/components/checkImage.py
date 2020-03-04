@@ -3,6 +3,13 @@ import math
 import pygame
 import pygame.camera
 import time
+import json
+
+data = []
+
+with open('../resources/data.json') as json_file:
+
+	data = json.load(json_file)
 
 def checkImage():
 
@@ -16,23 +23,6 @@ def checkImage():
 	img = cam.get_image()
 
 	pygame.image.save(img, imgsrc)
-
-	file = open('../resources/data.txt', 'r')
-
-	data = []
-
-	for line in file:
-
-    	txt = line.split(' ')
-
-    	data.append({
-        	"r" : txt[0],
-        	"g" : txt[1],
-        	"b" : txt[2],
-        	"t" : txt[3][0]
-    	})
-
-		print(time.time() - startAt)
 
 	# Ladda bild och ta ut rgb värde
 	img = Image.open( imgsrc )
