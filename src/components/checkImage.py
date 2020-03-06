@@ -13,19 +13,17 @@ with open('data.json') as json_file:
 
 def checkImage():
 
-	imgsrc = "__cache__.jpg"
+	# TODO: Test this, not using __cache__.jpg might not work
 
 	pygame.camera.init()
 
+	#Tar bild
 	cam = pygame.camera.Camera("/dev/video0",(640,480))
 	cam.start()
+	pil_string_image = pygame.image.tostring(cam.get_image(),"RGBA",False)
+	img = Image.frombytes("RGBA",(1280,720),pil_string_image)
 
-	img = cam.get_image()
-
-	pygame.image.save(img, imgsrc)
-
-	# Ladda bild och ta ut rgb värde
-	img = Image.open( imgsrc )
+	#Tar ut rgb värde
 	img = img.resize( ( 1,1 ) )
 	px = img.load()[0,0]
 
