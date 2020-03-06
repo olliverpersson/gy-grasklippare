@@ -7,7 +7,7 @@ import json
 
 data = []
 
-with open('../resources/data.json') as json_file:
+with open('data.json') as json_file:
 
 	data = json.load(json_file)
 
