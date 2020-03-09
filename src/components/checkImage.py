@@ -7,7 +7,7 @@ import json
 
 data = []
 
-with open('data.json') as json_file:
+with open('./resources/data.json') as json_file:
 
 	data = json.load(json_file)
 
@@ -33,8 +33,6 @@ def checkImage():
 
 	distance = 500 #Så första alltid blir närmast i början
 	index = 0
-
-	print(time.time() - startAt)
 
 	for i, item in enumerate(data):
 

@@ -12,6 +12,7 @@ with open('data.json') as json_file:
 
 	data = json.load(json_file)
 
+print("Folder for images to check:")
 src = input()
 
 print( glob.glob('{}/*'.format(src)) )
@@ -51,11 +52,7 @@ for file in glob.glob( '{}/*'.format(src)):
 			distance = d
 			index = i
 
-		print(i)
-		print(index)
-		print(d)
-		print(distance)
 
 	print("---------")
-	print(index)
-	print( file + ' ' + data[index]["t"] )
+	print(file)
+	print(data[index]["t"])
