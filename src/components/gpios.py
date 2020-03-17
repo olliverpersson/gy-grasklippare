@@ -1,3 +1,4 @@
+
 from gpiozero import LED, Button, DistanceSensor
 import time
 
@@ -19,7 +20,7 @@ MKOO = LED(6)
 
 SV = DistanceSensor(echo=17, trigger=4) #SVS
 
-SH = Button(23) #SHS
+#SH = Button(23) #SHS
 
 def init():
 	print("turning everything to it's initial state")

@@ -26,7 +26,7 @@ def turn(direction):
   MHOO.off()
   MVOO.off()
   
-  time.sleep(5)
+  time.sleep(2)
   
   MHOO.on()
   MVOO.on()
@@ -58,7 +58,7 @@ def turn(direction):
   MHOO.off()
   MVOO.off()
     
-  time.sleep(5)
+  time.sleep(1)
   
   MKOO.off()
 
