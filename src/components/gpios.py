@@ -1,4 +1,5 @@
-from gpiozero import LED, Button
+
+from gpiozero import LED, Button, DistanceSensor
 import time
 
 # Every GPIO connection is initiated here
@@ -17,9 +18,9 @@ MHMINUS = LED(26)
 
 MKOO = LED(6)
 
-SV = Button(4) #SVS
+SV = DistanceSensor(echo=17, trigger=4) #SVS
 
-SH = Button(23) #SHS
+#SH = Button(23) #SHS
 
 def init():
 	print("turning everything to it's initial state")
